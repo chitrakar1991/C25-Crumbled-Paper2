@@ -13,7 +13,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	paper = new Paper(400, 200, 20);
+	paper = new Paper(400, 200, 30);
 
 	ground = new Ground(600, 370, 1200, 10);
 
@@ -33,7 +33,7 @@ function setup() {
 
 
 function draw() {
-  background(0);
+  background("yellow");
   Engine.update(engine);
   
   paper.display();
